@@ -1,0 +1,24 @@
+{
+  "name": "chat-app-css-illustration-master",
+  "version": "1.0.0",
+  "description": "![Design preview for the Chat app CSS illustration coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mr-Som3a/Chat_app_css_illustration.git"
+  },
+  "author": "mr_som3a",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mr-Som3a/Chat_app_css_illustration/issues"
+  },
+  "homepage": "https://github.com/Mr-Som3a/Chat_app_css_illustration#readme",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.69.4"
+  }
+}
