@@ -1,3 +1,218 @@
-div
-    p
-        color: green
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: 'Rubik', sans-serif
+body
+    .backgroundShapes
+        display: flex
+        justify-content: space-between
+        .leftShape
+            background-color: hsl(280, 100%, 61%)
+            position: fixed
+            width: 50%
+            height: 55dvh
+            border-bottom-right-radius: 45vw
+        .rightShape
+            background: linear-gradient(20deg,hsl(264, 100%, 61%,0.08), hsl(293, 100%, 63%,0.05))
+            position: fixed
+            right: 0
+            bottom: 0
+            width: 50%
+            height: 55dvh
+            border-top-left-radius: 45vw
+    main
+        position: relative
+        margin: 15% auto
+        width: 80%
+        display: flex
+        align-items: center
+        flex-direction: column
+        .mobileView
+            overflow: hidden
+            display: flex
+            flex-direction: column
+            box-shadow: 7px 20px 20px 5px #ddddddaa
+            width: 260px
+            margin: 0 auto 50px
+            background-color: hsl(270, 20%, 96%)
+            border-radius: 30px
+            border: 10px solid white
+            header
+                height: 70px
+                padding: 30px 0px 30px 5px
+                background: linear-gradient(90deg,hsl(264, 100%, 61%), hsl(293, 100%, 63%))
+                border-radius: 20px 20px 8px 8px
+                position: relative
+                margin-bottom: 5px
+                &::before
+                    position: absolute
+                    content: " "
+                    width: 60%
+                    height: 35%
+                    background-color: white
+                    left: 20%
+                    top: -8px
+                    border-radius: 10px
+                picture
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    .avatar
+                        width: 30px
+                        height: 30px
+                        border-radius: 15px
+                        border: solid 2px white
+                    .backIcon
+                        width: 20px
+                        height: 20px
+                        margin-right: 5px
+                    .userInfo
+                        margin-left: 5px
+                        margin-right: 70px
+                        .userName
+                            color: white
+                            font-size: 12px
+                            margin-bottom: 5px
+                        .status
+                            color: hsl(206, 6%, 79%)
+                            font-size: 9px
+                            margin-left: 3px
+                    .dots
+                        height: 15px
+                        width: 10px
+            .container
+                display: grid
+                height: fit-content
+                grid-template-columns: repeat(8,30px)
+                gap: 8px 0
+                font-size: .5em
+                .msg1
+                    height: fit-content
+                    margin-left: 5px
+                    padding: 5px
+                    border-radius: 10px 10px 10px 3px
+                    color: rgb(158, 46, 210)
+                    background-color: rgb(226,213,232)
+                    grid-column: 1/6
+                .msg2
+                    align-self: center
+                    margin-right: 5px
+                    grid-column: 3/9
+                    height: fit-content
+                    padding: 5px
+                    border-radius: 10px 10px 5px
+                    background-color: white
+                .msg
+                    height: 35px
+                    margin-left: 5px
+                    padding: 5px
+                    border-radius: 10px 10px 10px 5px
+                    color: white
+                    background: linear-gradient(270deg,hsl(264, 100%, 61%), hsl(293, 100%, 63%))
+                    grid-column: 1/7
+                    font-size: 10px
+                    display: grid
+                    grid-template-columns: 20px 1fr 30px
+                    align-items: center
+                    .price
+                        font-weight: 400
+                        font-size: 14px
+                    .circle
+                        position: relative
+                        height: 15px
+                        width: 15px
+                        border: 2px solid white
+                        border-radius: 10px
+                picture
+                    display: flex
+                    justify-content: space-evenly
+                    img
+                        margin-left: 5px
+                        width: 45px
+                        height: 45px
+                        border-radius: 10px
+            footer
+                width: 95%
+                height: 35px
+                margin: 10px auto
+                padding: 0 10px 0 14px
+                display: flex
+                align-items: center
+                justify-content: space-between
+                background-color: white
+                border-radius: 25px
+                color: gray
+                font-size: 12px
+                .circle
+                    position: relative
+                    height: 24px
+                    width: 24px
+                    border-radius: 12px
+                    background-color: rgb(62, 0, 95)
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    .arrow
+                        width: 30%
+                        height: 30%
+                        box-sizing: border-box
+                        border-right: 3px solid white
+                        border-top: 3px solid white
+                        rotate: 45deg
+        .content
+
+            text-align: center
+            h1
+                margin-bottom: 20px
+                font-size: 2rem
+                color: hsl(271, 36%, 24%)
+            p
+                color: hsl(270, 7%, 64%)
+                font-weight: 700
+                line-height: 25px
+@media screen and ( min-width: 720px )
+    body
+        .backgroundShapes
+            .leftShape
+                height: 70dvh
+                border-bottom-right-radius: 50%
+                border-bottom-left-radius: 50%
+                left: -100px
+                transition: all .3s ease
+            .rightShape
+                height: 70dvh
+                border-top-right-radius: 50%
+                border-top-left-radius: 50%
+                right: -150px
+                transition: all .3s ease
+        main
+            margin: 5% auto 0
+            .content
+                max-width: 600px
+
+@media screen and (min-width: 1440px)
+    body
+        .backgroundShapes
+            .leftShape
+                width: 40%
+                height: 88dvh
+                border-bottom-right-radius: 50%
+                border-bottom-left-radius: 50%
+                left: -100px
+                transition: all .3s ease
+            .rightShape
+                height: 88dvh
+                border-top-right-radius: 50%
+                border-top-left-radius: 50%
+                right: -400px
+                transition: all .3s ease
+        main
+            margin: 10% auto 0
+            flex-direction: row
+            justify-content: center
+            .mobileView
+                margin: auto 10%
+            .content
+                text-align: left
+                max-width: 500px
