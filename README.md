@@ -22,8 +22,8 @@ Responsive Chat-App-illustration design for web sites
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/Mr-Som3a/Chat_app_css_illustration.git)
+- Live Site URL: [live site URL](https://mr-som3a.github.io/Chat_app_css_illustration/)
 
 ### Built with
 
